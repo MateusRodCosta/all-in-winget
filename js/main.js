@@ -95,7 +95,7 @@ function generateWingetCommand() {
     codeBlock.appendChild(commandText);
     div.appendChild(codeBlock);
     let img = document.createElement('img');
-    img.src = "/img/copy.svg";
+    img.src = "img/copy.svg";
     img.onclick = function() {
         navigator.clipboard.writeText(output);
         alert("Copied to clipboard: " + output);
