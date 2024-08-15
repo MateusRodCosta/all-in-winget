@@ -56,19 +56,19 @@ window.onload = async function() {
 }
 
 async function fetchComponents() {
-    let response = await fetch("/json/components.json");
+    let response = await fetch("json/components.json");
     let json = await response.json();
     return json;
 }
 
 async function fetchTools() {
-    let response = await fetch("/json/tools.json");
+    let response = await fetch("json/tools.json");
     let json = await response.json();
     return json;
 }
 
 async function fetchSoftwares() {
-    let response = await fetch("/json/softwares.json");
+    let response = await fetch("json/softwares.json");
     let json = await response.json();
     return json;
 }
