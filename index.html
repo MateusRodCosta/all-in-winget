@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/pico.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/main.js" ></script>
+
+
+    <title>All in WinGet - WinGet command generator</title>
+    <meta name="description" content="WinGet command generator">
+    <!-- Open Graph Protocol START -->
+    <meta property="og:title" content="All in WinGet - WinGet command generator"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="WinGet command generator">
+    <meta property="og:site_name" content="All in WinGet"/>
+    <!-- Open Graph Protocol END -->
+  </head>
+  <body>
+    <main role="main">
+      <div id="content" class="container">
+        <h1>ALL-IN-WINGET</h1>
+          <section>
+            <article>
+              <h2>What's WinGet?</h2>
+              <p>WinGet is a tool by Microsoft (requires at least Windows 10 1809) similar to package managers under Linux.</p>
+              <p>WinGet allows installing, uninstalling and updating many Windows applications without having to go after an installer, deal with self-updaters or uninstallers.</p>
+            </article>
+            <article>
+              <h2>Why <strong>All-in-WinGet</strong>?</h2>
+              <p>Apparently there have existed for a long time websites that allowed you to select a set of applications and it would download a installer that would install each application at once, without needing to search each installer separately.</p>
+              <p>While convenient, this relies on trusting that the website never decides to ship malware someday.</p>
+              <p>All-in-WinGet decides to instead rely on Microsoft's WinGet tool and its repos of manifests and only generating a WinGet command.</p>
+              <p>This effectively means that, as long as the generated command tells WinGet to download the correct programs, it's mostly up to the user's trust in Microsoft.</p>
+            </article>
+            <article>
+              <h2>Is there any drawbacks?</h2>
+              <p>For the most part no, but there might be issues with application that behave different when installed in system mode (requires admin access and is installed in Program Files) vs user mode (no admin access, installed in user folder).</p>
+              <p>The only software I know of that suffers from this problem is Google Chrome, so you might prefer to install it from the <a href="https://www.google.com/chrome/">official installer</a> instead</a>.</p>
+              <p>Basically, it's up to you whether you want to update Chrome from its own updater or, when installed in system mode, only from WinGet.</p>
+            </article>
+          </section>
+          <section>
+            <h2>AVAILABLE FOR DOWNLOAD</h2>
+            <article id="components-list">
+              <h3>Components</h3>
+            </article>
+            <article id="tools-list">
+                <h3>Tools</h3>
+            </article>
+            <article id="softwares-list">
+                <h3>Software</h3>
+            </article>
+          </section>
+          <button onclick="generateWingetCommand()">Generate WinGet command</button>
+          <section id="winget-section"></section>
+      </div>
+    </main>
+  </body>
+</html>

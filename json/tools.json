@@ -1,0 +1,15 @@
+
+[
+    {
+        "id": "RARLab.WinRAR",
+        "name": "WinRAR"
+    },
+    {
+        "id": "7zip.7zip",
+        "name": "7-Zip"
+    },
+    {
+        "id": "Giorgiotani.Peazip",
+        "name": "PeaZip"
+    }
+]

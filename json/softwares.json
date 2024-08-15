@@ -1,0 +1,18 @@
+[
+    {
+        "id": "Mozilla.Firefox",
+        "name": "Mozilla Firefox"
+    },
+    {
+        "id": "Google.Chrome",
+        "name": "Google Chrome"
+    },
+    {
+        "id": "qBittorrent.qBittorrent",
+        "name": "qBittorrent"
+    },
+    {
+        "id": "VideoLAN.VLC",
+        "name": "VLC media player"
+    }
+]

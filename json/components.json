@@ -1,0 +1,51 @@
+
+[
+    {
+        "id": "Microsoft.VCRedist.2005.x86",
+        "name": "Microsoft Visual C++ 2005 Redistributable"
+    },
+    {
+        "id": "Microsoft.VCRedist.2005.x64",
+        "name": "Microsoft Visual C++ 2005 Redistributable (x64)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2008.x86",
+        "name": "Microsoft Visual C++ 2008 Redistributable - x86"
+    },
+    {
+        "id": "Microsoft.VCRedist.2008.x64",
+        "name": "Microsoft Visual C++ 2008 Redistributable - x64"
+    },
+    {
+        "id": "Microsoft.VCRedist.2010.x86",
+        "name": "Microsoft Visual C++ 2010 x86 Redistributable"
+    },
+    {
+        "id": "Microsoft.VCRedist.2010.x64",
+        "name": "Microsoft Visual C++ 2010 x64 Redistributable"
+    },
+    {
+        "id": "Microsoft.VCRedist.2012.x86",
+        "name": "Microsoft Visual C++ 2012 Redistributable (x86)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2012.x64",
+        "name": "Microsoft Visual C++ 2012 Redistributable (x64)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2013.x86",
+        "name": "Microsoft Visual C++ 2013 Redistributable (x86)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2013.x64",
+        "name": "Microsoft Visual C++ 2013 Redistributable (x64)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2015+.x86",
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86)"
+    },
+    {
+        "id": "Microsoft.VCRedist.2015+.x64",
+        "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64)"
+    }
+]

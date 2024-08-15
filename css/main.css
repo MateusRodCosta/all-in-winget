@@ -1,0 +1,11 @@
+#components-list, #tools-list, #softwares-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 16px;
+}
+
+#components-list h3, #tools-list h3, #softwares-list h3 {
+    flex-basis: 100%;
+}
