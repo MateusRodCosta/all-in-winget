@@ -1,4 +1,4 @@
-#components-list, #tools-list, #softwares-list {
+.selection-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,6 +6,6 @@
     column-gap: 16px;
 }
 
-#components-list h3, #tools-list h3, #softwares-list h3 {
+.selection-list h3 {
     flex-basis: 100%;
 }
