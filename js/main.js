@@ -17,12 +17,13 @@ window.onload = async function() {
 function createSelection(destination, list) {
     for (let i in list) {
         let hold = document.createElement('div');
+        hold.className = "selection-item"
         let checkbox = document.createElement('input');
         checkbox.id = "chbid-" + list[i]["id"];
         checkbox.type = "checkbox";
         checkbox.value = list[i]["id"];
-        var label = document.createElement('label');
-        var tn = document.createTextNode(list[i]["name"]);
+        let label = document.createElement('label');
+        let tn = document.createTextNode(list[i]["name"]);
         label.htmlFor="chbid-" + list[i]["id"];
         label.appendChild(tn);
         hold.appendChild(checkbox);
@@ -54,8 +55,8 @@ function generateWingetCommand() {
 
     let hold = document.createElement('article');
     let div = document.createElement('div');
-    var codeBlock = document.createElement('code');
-    var commandText = document.createTextNode(output);
+    let codeBlock = document.createElement('code');
+    let commandText = document.createTextNode(output);
     codeBlock.appendChild(commandText);
     div.appendChild(codeBlock);
     let img = document.createElement('img');
