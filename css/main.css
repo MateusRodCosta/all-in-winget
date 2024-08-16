@@ -17,3 +17,13 @@
   align-items: center;
   gap: 8px;
 }
+
+#winget-command {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#winget-command span {
+  flex-grow: 1;
+}

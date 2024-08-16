@@ -16,13 +16,13 @@ window.onload = async function() {
 
 function createSelection(destination, list) {
   for (let i in list) {
-    let hold = document.createElement('div');
+    let hold = document.createElement("div");
     hold.className = "selection-item"
-    let checkbox = document.createElement('input');
+    let checkbox = document.createElement("input");
     checkbox.id = "chbid-" + list[i]["id"];
     checkbox.type = "checkbox";
     checkbox.value = list[i]["id"];
-    let label = document.createElement('label');
+    let label = document.createElement("label");
     let tn = document.createTextNode(list[i]["name"]);
     label.htmlFor="chbid-" + list[i]["id"];
     label.appendChild(tn);
@@ -53,19 +53,22 @@ function generateWingetCommand() {
   }
   let output = "winget install " + fullSelectionList.join(" ");
 
-  let hold = document.createElement('article');
-  let div = document.createElement('div');
-  let codeBlock = document.createElement('code');
+  let hold = document.createElement("article");
+  let div = document.createElement("div");
+  let codeBlock = document.createElement("code");
+  codeBlock.id = "winget-command";
+  let spanBlock = document.createElement("span");
   let commandText = document.createTextNode(output);
-  codeBlock.appendChild(commandText);
-  div.appendChild(codeBlock);
-  let img = document.createElement('img');
+  spanBlock.appendChild(commandText);
+  let img = document.createElement("img");
   img.src = "img/copy.svg";
   img.onclick = function() {
     navigator.clipboard.writeText(output);
     alert("Copied to clipboard: " + output);
   }
-  div.appendChild(img);
+  codeBlock.appendChild(spanBlock);
+  codeBlock.appendChild(img);
+  div.appendChild(codeBlock);
   hold.appendChild(div);
   wgSection.appendChild(hold);
 }
