@@ -1,19 +1,19 @@
 .selection-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 8px;
-    column-gap: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 16px;
 }
 
 .selection-list h3 {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .selection-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
 }
