@@ -27,3 +27,17 @@
 #winget-command span {
   flex-grow: 1;
 }
+
+footer {
+  background-color: var(--pico-primary-background);
+}
+
+footer p {
+  color: var(--pico-primary-inverse);
+  text-align: center;
+}
+
+footer p a {
+  color: var(--pico-primary-inverse);
+  text-decoration-color: var(--pico-primary-inverse);
+}
